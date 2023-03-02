@@ -6,7 +6,7 @@
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million,
 # find the sum of the even-valued terms.
 
-def fibonacci(limit: int) -> int:
+def fibonacci_even_sum(limit: int) -> int:
     first, second = 1, 2
     last_two_fibonacci = [first, second]
     total_sum = 2  # Starts at 2 because we only care about even numbers
@@ -25,7 +25,7 @@ def fibonacci(limit: int) -> int:
     return total_sum
 
 
-print(fibonacci(4_000_000))
+print(fibonacci_even_sum(4_000_000))
 
 
 
